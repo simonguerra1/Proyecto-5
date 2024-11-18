@@ -1,0 +1,156 @@
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+}
+
+#piedraPapelTijera-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  width: 50%;
+}
+
+#game button {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#game button:hover {
+  background-color: #5548d9;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#game button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#result,
+#score {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--fourth);
+}
+
+#score {
+  font-size: 22px;
+  color: #ff6584; /* Color rosa */
+  margin-bottom: 10px;
+}
+
+button#resetButton {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #ff6584;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button#resetButton:hover {
+  background-color: #ff4a6d;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button#resetButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#piedraPapelTijera-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#countdown {
+  width: 5%;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--third);
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  border: 3px solid #ff4747;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0 4px 15px rgba(255, 71, 71, 0.6);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#countdown:hover {
+  transform: scale(1.1);
+  background-color: var(--fourth);
+}
+
+#countdown:active {
+  transform: scale(0.95); /* Efecto de presionado */
+  box-shadow: 0 2px 8px rgba(255, 71, 71, 0.4);
+}
+
+#expl {
+  background-color: var(--second);
+  width: 50%;
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--white);
+  text-align: center;
+}
+
+#piedraPapelTijera-container > button {
+  width: 50%;
+  height: 70px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white); /* Usa la variable de color */
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 3px solid var(--white);
+  border-radius: 10px;
+  background-color: var(--second);
+  box-shadow: 0 4px 15px rgba(255, 71, 71, 0.6);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#piedraPapelTijera-container > button:hover {
+  transform: scale(1.05);
+  background-color: #ffcccc;
+}
+
+#piedraPapelTijera-container > button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(255, 71, 71, 0.4);
+}

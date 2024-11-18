@@ -1,0 +1,13 @@
+:root {
+  --first: #694d9d;
+  --second: #4b8bc3;
+  --third: #e76a6a;
+  --fourth: #d7bae3;
+  --white: #ffffff;
+  --font-primary: 'Russo One', sans-serif;
+  font-family: var(--font-primary);
+}
+
+body {
+  background-color: var(--first);
+}
